@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="manifest" href="manifest.webmanifest">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='shortcut icon' type='image/x-icon' href='/heroiv1b/favicon.ico' />
+        <link rel="manifest" href="/heroiv1b/manifest.webmanifest">
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+                background-color: #232323;
+                height: 100%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            body > * {
+                flex-grow: 1;
+            }
+            .info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .controls {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* background-color: #3e3e3e; */
+                background: linear-gradient(#e66465, #9198e5);
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                box-shadow: 0px 0px 20px 0px #0000005c;
+            }
+            .controls button {
+                padding: 10px 25px;
+                border-radius: 45px;
+                border: 0;
+                background: black;
+                /* background-color: rgb(43, 115, 248); */
+            }
+            .controls button:active {
+                background: rgb(53, 53, 53);
+            }
+            .text {
+                font-size: 17px;
+                font-weight: 800;
+                color: white;
+                font-family: "Gill Sans", sans-serif;
+                text-shadow: 0px 4px 10px #2e7498, 0px -4px 10px #b97878;
+            }
+        </style>
     </head>
     <body>
-        xxx some html xxx
-        <button id="open">BUTTON</button>
+        <div class="info text">
+            пр. Героев 1Б
+        </div>
+        <div class="controls">
+            <button id="open" class="text">Открыть</button>
+        </div>
     </body>
-    <script src="main.js"></script>
+    <script src="/heroiv1b/main.js"></script>
 </html>
