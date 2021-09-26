@@ -4,7 +4,7 @@ self.addEventListener('install', (e) => {
 
 self.addEventListener('fetch', (e) => {
     e.respondWith((async () => {
-        debugger;
+        const cacheName = 'default';
         const r = await caches.match(e.request);
         if (r) { return r; }
         const response = await fetch(e.request);
