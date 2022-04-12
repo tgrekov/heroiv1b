@@ -10,9 +10,20 @@
     "orientation": "portrait",
     "icons": [
         {
-            "src": "/heroiv1b/img/h1b.svg",
-            "sizes": "48x48 72x72 96x96 128x128 144x144 256x256",
-            "type": "image/svg+xml",
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
             "purpose": "maskable"
         }
     ]
