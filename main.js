@@ -4,4 +4,4 @@ function installServiceWorker() {
     };
 }
 installServiceWorker();
-document.querySelector('#door', () => fetch('http://127.0.0.1'));
+document.querySelector('#door').addEventListener('click', () => fetch('http://127.0.0.1'));
