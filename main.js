@@ -4,4 +4,5 @@ function installServiceWorker() {
     };
 }
 installServiceWorker();
-document.querySelector('#open').addEventListener('click', () => fetch('http://93.183.216.160'));
+//93.183.216.160
+document.querySelector('#open').addEventListener('click', () => fetch('http://192.168.0.108'));
