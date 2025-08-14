@@ -84,13 +84,13 @@
 </head>
 <body>
     <div class="input-group">
-        <label class="input-title">глюкоза натощак (ммоль/л)</label>
-        <input type="number" class="input" id="input1" placeholder="Enter first number">
+        <label class="input-title" for="glucose">Глюкоза натощак (ммоль/л)</label>
+        <input type="number" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" class="input" id="glucose" placeholder="0.0">
     </div>
 
     <div class="input-group">
-        <label class="input-title">инсулин натощак (мкМЕ/мл)</label>
-        <input type="number" class="input" id="input2" placeholder="Enter second number">
+        <label class="input-title" for="insulin">Инсулин натощак (мкМЕ/мл)</label>
+        <input type="number" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" class="input" id="insulin" placeholder="0.0">
     </div>
 
     <p class="result" id="result">Result: 0</p>
@@ -112,8 +112,8 @@
         const HOMA_INDEX_CONSTANT = 22.5;
         const HOMA_INDEX_THRESHOLD = 2.7;
 
-        const input1 = document.getElementById('input1');
-        const input2 = document.getElementById('input2');
+        const input1 = document.getElementById('glucose');
+        const input2 = document.getElementById('insulin');
         const result = document.getElementById('result');
 
         function calculateResult() {
